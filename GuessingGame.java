@@ -11,13 +11,13 @@ public class GuessingGame {
         int playerGuess = -1;
         int playAgain;
 
-        //asking for name and age
+        //asking for name and age of player
         String name = JOptionPane.showInputDialog("Welcome! What's your name?");
         String ageInput = JOptionPane.showInputDialog("Hi "+ name + "! How old are you?");
         int age = Integer.parseInt(ageInput);
 
 
-        //ask for the maximum number
+        //asking for the maximum number
         String maxInput = JOptionPane.showInputDialog
         ("Enter the maximum Number for the guessing range:");
         int maxNumber = Integer.parseInt(maxInput);
@@ -25,7 +25,7 @@ public class GuessingGame {
         // this generates a random number between 1 and maxnumber
         int targetNumber = random.nextInt(maxNumber) + 1;
 
-        //Game loop
+        //The GuessingGame loop
         while(playerGuess != targetNumber){
             String guessInput = JOptionPane.showInputDialog
             ("Guess a number between 1 and " + maxNumber + ";");
@@ -45,7 +45,7 @@ public class GuessingGame {
                 (null, "Congrats, " + name + " you guessed the number in " + tryCount + " attempts.");
             }
         }
-        // asking to play again
+        // asking the player to play again
         playAgain = JOptionPane.showConfirmDialog(null,
         "Do you want to play again?", "Play Again,", JOptionPane.YES_NO_OPTION);
         while(playAgain == JOptionPane.YES_OPTION);
