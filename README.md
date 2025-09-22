@@ -1,2 +1,2 @@
 # GuessingGame
-Database Development Exercise
+Database Development Exercise using **Java**
