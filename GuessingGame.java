@@ -1,5 +1,7 @@
 import javax.swing.JOptionPane;
 import java.util.Random;
+/*     NAME                           DATE                      DESCRIPTION
+   Joseph Lodico            Monday, September 22 2025      Guessing Game Exercise    */ 
 
 public class GuessingGame {
     public static void main(String[] args){
